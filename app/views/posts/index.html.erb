@@ -1,0 +1,5 @@
+<%= form_for @search_form, url: posts_path do |f| %>
+  <%= f.datetime :posted_at_from %>
+  <%= f.datetime :posted_at_to %>
+  <%= f.submit '検索' %>
+<% end %>
